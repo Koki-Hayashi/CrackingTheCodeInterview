@@ -1,0 +1,1 @@
+Implement an algorithm which detects a given string is consisted of only unique chars or not.
