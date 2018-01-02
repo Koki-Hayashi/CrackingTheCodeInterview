@@ -1,0 +1,2 @@
+Given 2 strings, write a method which detect both consist of same charactors or not.
+
