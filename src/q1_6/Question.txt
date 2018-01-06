@@ -1,0 +1,5 @@
+Implement an algorithm which returns compressed string like following:
+given : aabccccaaa -> compressed : a2b1c5a3
+
+However, if compressed string is actually longer than before, then return the original one.
+
