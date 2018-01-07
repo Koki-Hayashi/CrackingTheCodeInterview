@@ -1,4 +1,4 @@
-package q2_1;
+package q2_2;
 
 public class Node {
     private Node next;
