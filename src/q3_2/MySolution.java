@@ -5,38 +5,31 @@ import java.util.LinkedList;
 public class MySolution {
 
     private LinkedList<Integer> stack = new LinkedList<>();
-    private LinkedList<Integer> sortedList = new LinkedList<>();
+    private LinkedList<Integer> minStack = new LinkedList<>();
 
-    private void insertIntoSortedList(int num){
-    	if (sortedList.size() == 0) {
-    		sortedList.add(num);
-    		return;
-	    }
-
-    	for (int i = 0 ; i < sortedList.size() ; i++) {
-    		if (sortedList.get(i) > num) {
-    			sortedList.add(i, num);
-    			break;
-		    }
-	    }
-    }
-
-    private int popFromSortedList(){
-    	return sortedList.removeFirst(); // throw exception when no contents is in stack
-    }
-
-	public synchronized void push(int num)
+	public synchronized void push(int value)
 	{
-		stack.push(num);
-		insertIntoSortedList(num);
+		if (value <= min()) {
+			minStack.push(value);
+		}
+
+		stack.push(value);
 	}
 
 	public synchronized int pop()
 	{
-		return stack.pop(); // throw exception when no contents is in stack
+		int value = stack.pop(); // throw exception when no contents is in stack
+		if (value == min()) {
+			minStack.pop();
+		}
+		return value;
 	}
 
 	public synchronized int min(){
-		return popFromSortedList();
+		if (minStack.isEmpty()) {
+			return Integer.MAX_VALUE; // error
+	 	}
+
+		return minStack.peek();
 	}
 }
