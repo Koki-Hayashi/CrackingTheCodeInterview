@@ -1,0 +1,1 @@
+Implement a stack which can not only push, pop, but also min to access smallest element in the stack. Each operation should be O(1).

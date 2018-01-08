@@ -8,7 +8,7 @@ public class MySolution {
     public Node findKthToLast(Node head, int k) {
         if (head == null ) return new Node();
 
-        Node current = head;
+	    Node current = head;
         Node keep = head;
 
         int loopCount = 0;
