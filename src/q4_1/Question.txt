@@ -1,0 +1,1 @@
+Given 2 nodes in a digraph, implement a method which detects there is a path to connect both nodes.
