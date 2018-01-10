@@ -1,0 +1,1 @@
+If there are plenty of plenty of 25 cents, 10 cents, 5 cents, and 1 cent coins, write a method which counts up all possible combination to make n cents.
