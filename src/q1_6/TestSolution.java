@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestSolution {
 
-    private MySolution solution = new MySolution();
+    private MySolution solution;
 
     private String case1_input = null;
     private String case1_output= null;
@@ -31,10 +31,9 @@ public class TestSolution {
     private String case7_output = "a2b1c5a3";
 
 
-
     @Before
     public void setup() {
-        //
+        solution = new MySolution();
     }
 
     @Test

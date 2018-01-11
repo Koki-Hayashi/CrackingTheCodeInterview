@@ -8,11 +8,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class TestSolution
 {
 
-    private MySolution solution = new MySolution();
+    private MySolution solution;
 
     @Before
     public void setup() {
-        //
+        solution = new MySolution();
     }
 
     @Test
