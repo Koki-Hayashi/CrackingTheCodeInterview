@@ -1,0 +1,2 @@
+Given an array, implement a method which detect sub array which can make biggest sum of elements and return the sum.
+E.g., [2, -1, 3, 4, -5] -> 8 ([2, -1, 3, 4])
