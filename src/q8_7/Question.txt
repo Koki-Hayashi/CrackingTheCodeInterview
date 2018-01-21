@@ -1,0 +1,1 @@
+Given a string, implement a method which returns all possible permutations of characters.
