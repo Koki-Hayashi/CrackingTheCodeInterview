@@ -1,0 +1,1 @@
+Given 2 arrays of int, implement a method which returns the minimum difference of following possible combination of numbers from each array.
