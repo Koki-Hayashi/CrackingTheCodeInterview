@@ -1,0 +1,2 @@
+There are long and short boards. Given k as a number of board you pick up, implement a method which list up all possible combinations of boards.
+
