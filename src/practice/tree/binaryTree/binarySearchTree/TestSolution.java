@@ -1,4 +1,4 @@
-package practice.tree.binarySearchTree;
+package practice.tree.binaryTree.binarySearchTree;
 
 import org.junit.Before;
 import org.junit.Test;
