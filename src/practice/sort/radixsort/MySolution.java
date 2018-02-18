@@ -29,7 +29,7 @@ public class MySolution {
                 int value = bucket[j];
 
                 int newBucketIndex = value / ((int) Math.pow(10, digit)) % 10;
-                newBucket[newBucketIndex][bucketIndices[i]] = 0;
+                newBucket[newBucketIndex][bucketIndices[i]] = value;
 
                 bucketIndices[i]++;
             }
